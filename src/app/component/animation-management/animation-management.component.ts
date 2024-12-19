@@ -12,7 +12,7 @@ import { DomSanitizer, SafeResourceUrl, SafeHtml } from '@angular/platform-brows
 export class AnimationManagementComponent implements OnInit {
   videoUrl1: SafeResourceUrl;
   videoTitle1 = 'Masters of Dirt: Show-Opener Video Tour 2019';
-  videoDescription1 = 'This project has a soft spot in my heart. This was the first group project I leeded. Just a small team of 5 talented people. Everything that could go wrong did go wrong. But we made it through and I learned a lot about leading.';
+  videoDescription1 = 'Imagine sitting in a dark concert hall full of ramps. On a big Screen you see this Video as the Show-Opener. When the dynamite explodes you see a pyro show and the riders come into the hall and jump the ramps. This project has a soft spot in my heart. This was the first group project I leeded. Just a small team of 5 talented people. Everything that could go wrong did go wrong. But we made it through and I learned a lot about leading.';
   modWebsiteUrl = 'https://www.mastersofdirt.com/';
   
   videoUrl2: SafeResourceUrl;
