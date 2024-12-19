@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/" class="logo">Your Logo</a>
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+  
+  <div class="nav-links" [class.active]="isMenuOpen">
+    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="/animation" routerLinkActive="active">Animation</a>
+    <a routerLink="/websites" routerLinkActive="active">Websites</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </div>
+</nav>
