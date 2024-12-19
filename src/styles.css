@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Import Helvetica Neue font */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/assets/fonts/HelveticaNeue.woff2') format('woff2'),
+       url('/assets/fonts/HelveticaNeue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url('./assets/images/background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    url('../src/assets/images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,10 +22,16 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
 }
 
 /* Optional: Ensure all pages take full height */
 app-root {
   display: block;
   min-height: 100vh;
+}
+
+/* Ensure proper font inheritance */
+* {
+  font-family: inherit;
 }
