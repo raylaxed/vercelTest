@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -130,6 +130,23 @@
     padding: 1rem;
   }
 
+  .video-section {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card.left {
+    order: 1;
+  }
+
+  .video-card.right {
+    order: 2;
+    min-height: auto;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+
   .instagram-grid {
     grid-template-columns: 1fr;
   }
@@ -150,6 +167,14 @@
 
   .instagram-description {
     padding: 1rem;
+  }
+
+  .video-card {
+    padding: 1rem;
+  }
+
+  .content-wrapper {
+    padding: 0.5rem;
   }
 }
 
@@ -192,4 +217,109 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: #007bff transparent;
+}
+
+/* New styles for video sections */
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  min-height: auto;
+}
+
+.video-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.video-card.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card.right {
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+/* Update video section styles */
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  min-height: auto;
+}
+
+@media (max-width: 1024px) {
+  .video-section {
+    grid-template-columns: 1fr;
+    gap: 0; /* Remove gap between cards */
+  }
+
+  .video-card.left, .video-card.right {
+    border-radius: 0; /* Remove border radius between cards */
+  }
+
+  .video-card.left {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 0;
+  }
+
+  .video-card.right {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 0;
+  }
+
+  /* Optional: Add a subtle separator between video and content */
+  .video-card.right {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .video-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Remove individual card styling */
+  .video-card {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    gap: 1.5rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
 }

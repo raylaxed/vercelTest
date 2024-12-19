@@ -1,56 +1,69 @@
 <div class="card-container">
-  
-
-      
-  <div class="video-card">
-    <h2>{{ videoTitle2 }}</h2>
-    <div class="video-container">
-      <iframe 
-        [src]="videoUrl2" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <!-- Video Card 2 -->
+  <div class="video-section">
+    <div class="video-card left">
+      <div class="video-container">
+        <iframe 
+          [src]="videoUrl2" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
-    <div class="video-description">
-      <p>{{ videoDescription2 }}</p>
-      <div class="link-container">
-        <a [href]="articleUrl" target="_blank" class="link-btn">Read NY Post Article</a>
-        <a [href]="companyUrl" target="_blank" class="link-btn">Visit Revo Foods Website</a>
+    <div class="video-card right">
+      <div class="content-wrapper">
+        <h2>{{ videoTitle2 }}</h2>
+        <p class="description">{{ videoDescription2 }}</p>
+        <div class="link-container">
+          <a [href]="articleUrl" target="_blank" class="link-btn">Read NY Post Article</a>
+          <a [href]="companyUrl" target="_blank" class="link-btn">Visit Revo Foods Website</a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="video-card">
-    <h2>{{ videoTitle1 }}</h2>
-    <div class="video-container">
-      <iframe 
-        [src]="videoUrl1" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <!-- Video Card 1 -->
+  <div class="video-section">
+    <div class="video-card left">
+      <div class="video-container">
+        <iframe 
+          [src]="videoUrl1" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
-    <div class="video-description">
-      <p>{{ videoDescription1 }}</p>
-    </div>
-  </div>
-
-  <div class="video-card">
-    <h2>{{ videoTitle3 }}</h2>
-    <div class="video-container">
-      <iframe 
-        [src]="videoUrl3" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="video-description">
-      <p>{{ videoDescription3 }}</p>
+    <div class="video-card right">
+      <div class="content-wrapper">
+        <h2>{{ videoTitle1 }}</h2>
+        <p class="description">{{ videoDescription1 }}</p>
+      </div>
     </div>
   </div>
 
+  <!-- Video Card 3 -->
+  <div class="video-section">
+    <div class="video-card left">
+      <div class="video-container">
+        <iframe 
+          [src]="videoUrl3" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="video-card right">
+      <div class="content-wrapper">
+        <h2>{{ videoTitle3 }}</h2>
+        <p class="description">{{ videoDescription3 }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instagram section remains unchanged -->
   <div class="instagram-card">
     <h2>Keinen Schritt zurück! by Veselý Marek </h2>
     <div class="instagram-content">
