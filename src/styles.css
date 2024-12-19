@@ -13,16 +13,37 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Create a fixed background container */
+body::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 200px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                     url('../src/assets/images/background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #333;
+  transform: translateY(0);
+  will-change: transform;
+  z-index: -1;
+  /* Add subtle movement on scroll */
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(-100px); /* Changed from positive to negative value */
+  }
 }
 
 /* Optional: Ensure all pages take full height */

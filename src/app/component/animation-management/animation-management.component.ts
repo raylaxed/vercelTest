@@ -13,15 +13,17 @@ export class AnimationManagementComponent implements OnInit {
   videoUrl1: SafeResourceUrl;
   videoTitle1 = 'Masters of Dirt Show-Opener Tour 2019';
   videoDescription1 = 'This project has a soft spot in my heart. This was the first group project I leeded. Just a small team of 5 talented people. Everything that could go wrong did go wrong. But we made it through and I learned a lot about leading.';
+  modWebsiteUrl = 'https://www.mastersofdirt.com/';
   
   videoUrl2: SafeResourceUrl;
   videoTitle2 = '3D-Printed Salmon by Revo Foods';
-  videoDescription2 = 'In this project i learned a lot about communication with the client, a lot of revisions and feedback loops where nessesary until the clients needs where satisfied. Good work Takes time! The Video did good, the marketing team told me it gave the technical "AHA-Moment" for potential investors, also it reached over half a million people.';  articleUrl = 'https://nypost.com/2023/09/19/3d-printed-salmon-is-now-on-the-market-what-is-it-made-from/';
+  videoDescription2 = '3D Printing Food?! This got to be one of the most futuristic projects i ever worked on. In this project i learned a lot about communication with the client, a lot of revisions and feedback loops where nessesary until the clients needs where satisfied. Good work Takes time! The Video did good, the marketing team told me it gave the technical "AHA-Moment" for potential investors, also it reached over half a million people.';  articleUrl = 'https://nypost.com/2023/09/19/3d-printed-salmon-is-now-on-the-market-what-is-it-made-from/';
   companyUrl = 'https://revo-foods.com/de/';
   
   videoUrl3: SafeResourceUrl;
   videoTitle3 = 'Simple 2D Animation - A simple Bumper';
-  videoDescription3 = 'This was a simple project for School. Just to show that my 2D skills are good as well.';
+  videoDescription3 = 'This was a simple project for School. Just to show that my 2D skills are good as well. I am really thankful for my school, because it was a great experience and i learned a lot. Teachers and Students are more like friends than enemies. I can recommend it to everyone who is interested in Art and Animation!';
+  schoolUrl = 'https://www.spengergasse.at/';
   
   instagramEmbed1: SafeHtml;
   instagramEmbed2: SafeHtml;
