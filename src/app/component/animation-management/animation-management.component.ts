@@ -11,12 +11,12 @@ import { DomSanitizer, SafeResourceUrl, SafeHtml } from '@angular/platform-brows
 })
 export class AnimationManagementComponent implements OnInit {
   videoUrl1: SafeResourceUrl;
-  videoTitle1 = 'Masters of Dirt Show-Opener Tour 2019';
+  videoTitle1 = 'Masters of Dirt: Show-Opener Video Tour 2019';
   videoDescription1 = 'This project has a soft spot in my heart. This was the first group project I leeded. Just a small team of 5 talented people. Everything that could go wrong did go wrong. But we made it through and I learned a lot about leading.';
   modWebsiteUrl = 'https://www.mastersofdirt.com/';
   
   videoUrl2: SafeResourceUrl;
-  videoTitle2 = '3D-Printed Salmon by Revo Foods';
+  videoTitle2 = 'Revo Foods: Investor Ad for 3D-Printed Vegan Salmon';
   videoDescription2 = '3D Printing Food?! This got to be one of the most futuristic projects i ever worked on. In this project i learned a lot about communication with the client, a lot of revisions and feedback loops where nessesary until the clients needs where satisfied. Good work Takes time! The Video did good, the marketing team told me it gave the technical "AHA-Moment" for potential investors, also it reached over half a million people.';  articleUrl = 'https://nypost.com/2023/09/19/3d-printed-salmon-is-now-on-the-market-what-is-it-made-from/';
   companyUrl = 'https://revo-foods.com/de/';
   
