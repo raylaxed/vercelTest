@@ -1,3 +1,8 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
 .card-container {
   padding: 1rem;
   display: flex;
@@ -5,14 +10,17 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .article-card, .video-card, .instagram-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
   padding: 1.25rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .article-card:hover, .video-card:hover, .instagram-card:hover {
