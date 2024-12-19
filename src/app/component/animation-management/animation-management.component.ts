@@ -16,7 +16,7 @@ export class AnimationManagementComponent implements OnInit {
   modWebsiteUrl = 'https://www.mastersofdirt.com/';
   
   videoUrl2: SafeResourceUrl;
-  videoTitle2 = 'Revo Foods: Investor Ad for 3D-Printed Vegan Salmon';
+  videoTitle2 = 'Revo Foods: Investor Ad for 3D-Printed Salmon';
   videoDescription2 = '3D Printing Food?! This got to be one of the most futuristic projects i ever worked on. In this project i learned a lot about communication with the client, a lot of revisions and feedback loops where nessesary until the clients needs where satisfied. Good work Takes time! The Video did good, the marketing team told me it gave the technical "AHA-Moment" for potential investors, also it reached over half a million people.';  articleUrl = 'https://nypost.com/2023/09/19/3d-printed-salmon-is-now-on-the-market-what-is-it-made-from/';
   companyUrl = 'https://revo-foods.com/de/';
   
